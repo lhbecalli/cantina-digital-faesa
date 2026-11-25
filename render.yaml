@@ -1,0 +1,25 @@
+# Blueprint do Render (https://render.com): um único serviço web com Docker.
+services:
+  - type: web
+    name: cantina-digital-faesa
+    runtime: docker
+    plan: free            # plano free "dorme" após ~15 min sem acesso (o 1º acesso leva ~30-60 s) e o disco é efêmero
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: ADMIN_PIN        # PIN do painel: defina no painel do Render (não vai para o repositório)
+        sync: false
+      - key: TRUST_PROXY
+        value: "true"
+      - key: DATABASE_URL     # opcional: PostgreSQL gerenciado (postgresql+psycopg://...) para não perder dados a cada deploy
+        sync: false
+      - key: VAPID_PUBLIC_KEY   # opcional: avisos push (python -m app.push generate)
+        sync: false
+      - key: VAPID_PRIVATE_KEY
+        sync: false
+      - key: VAPID_SUBJECT
+        value: mailto:cantina@example.com
+      - key: REPORT_INTERVAL_SECONDS
+        value: "120"

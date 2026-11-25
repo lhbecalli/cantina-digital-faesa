@@ -1,0 +1,12 @@
+@import "@cantina/shared/styles.css";
+@source "../../../packages/shared/src";
+@import "./app.css";
+.push-prompt { display: grid; grid-template-columns: auto 1fr; gap: var(--s2) var(--s3); align-items: center; border: 1px solid var(--line-strong); border-radius: var(--r-lg); padding: var(--s3) var(--s4); }
+.push-prompt p { color: var(--ink); }
+.push-prompt .btn { min-width: 0; }
+.push-prompt .btn-primary { grid-column: 1 / 2; justify-self: start; }
+.push-prompt .btn-ghost { grid-column: 2 / 3; justify-self: start; }
+.push-settings { display: grid; gap: var(--s3); }
+.push-row { display: flex; gap: var(--s3); align-items: flex-start; color: var(--gray); }
+.push-row .ic { color: var(--blue-600); margin-top: 2px; }
+.name-form { display: grid; grid-template-columns: 1fr auto; gap: var(--s3); align-items: end; }

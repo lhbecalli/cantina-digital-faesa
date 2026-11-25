@@ -1,0 +1,9 @@
+/* Complementos da versão React (componentes novos) */
+.toast { width: 100%; text-align: left; font: inherit; cursor: pointer; }
+.toast-body { display: block; }
+.toast .toast-body > span { display: block; font-size: 14px; color: var(--gray); }
+.logo-fallback { font-weight: 800; letter-spacing: .08em; color: var(--blue-900); }
+.skeleton { border-radius: var(--r-lg); background: #DCE4EF; animation: ph-pulse 1.8s ease-in-out infinite; }
+.conn-banner { display: flex; align-items: center; gap: var(--s2); justify-content: center; padding: var(--s2) var(--s4); background: #FFF1E0; color: #6B3300; font-size: 14px; font-weight: 600; }
+.conn-banner button { min-height: 44px; border: 0; background: none; color: var(--blue-700); font-weight: 700; text-decoration: underline; }
+.logo-plate { padding: 4px 10px; }

@@ -1,0 +1,50 @@
+/* Tokens de design — Cantina Digital FAESA
+   Um sistema só: superfícies planas, borda de 1px, raio pequeno e consistente, pouca cor.
+   Easing no padrão do repo Bola: entradas curtas com opacity + translateY. */
+:root {
+  --blue-900: #0B3A7A;   /* títulos / header */
+  --blue-700: #174C9E;
+  --blue-600: #1F5FC4;   /* ação primária */
+  --orange:   #F5921E;   /* acento (uso pontual) */
+  --orange-ink: #AD4F00; /* acento laranja em texto/ícone sobre branco (AA) */
+  --orange-deep: #D26A00; /* laranja de gráfico/realce (>= 3:1 sobre branco) */
+  --green:    #1B7F40;   /* sucesso / confirmar */
+  --teal:     #1F6B58;
+  --ai:       #0B3A7A;   /* IA: azul discreto, sem cor própria */
+  --cta:      #C93B0E;   /* ação do carrinho/chat (texto branco AA) */
+  --cta-ink:  #C93B0E;   /* traço do botão "+" sobre branco */
+  --red:      #D92D20;   /* urgência */
+  --card:     #F2F6FB;
+  --ink:      #1B2433;
+  --gray:     #485364;   /* texto secundário (AA em branco, card e coluna) */
+  --icon-muted: #66758A; /* ícones cinza / passo pendente */
+  --placeholder: #5F6B7C;
+  --line:     #A9B8CC;   /* divisores e bordas de cartão */
+  --line-strong: #7B8AA0; /* bordas de input, chip e botão (>= 3:1) */
+  --toggle-off: #7B8AA0;
+  --toggle-on: #DCE9FA;   /* fundo do filtro ativo (sólido) */
+  --disabled-bg: #D9E0EA;
+  --disabled-ink: #4A5565;
+  --col:      #EEF3F9;   /* fundo da coluna do kanban */
+  --status-wait: #9A4A06;
+  --on-dark-muted: #DCE6F5;
+  --bg:       #FFFFFF;
+  --bg-soft:  #F7F9FC;
+  --bg-page:  #1F5CB0;   /* fundo azul das três páginas, mais claro que o header */
+
+  /* escala de espaçamento única (4 px base) */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s6: 24px; --s8: 32px;
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 12px;
+  --r-pill: 8px;   /* sem pílulas: mesmo raio dos controles */
+
+  --shadow-card: none;
+  --shadow-float: 0 4px 16px rgba(11, 30, 60, .12);
+
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-in-out: cubic-bezier(.77, 0, .175, 1);
+
+  --font: "Segoe UI", "Noto Sans", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --grad-bar: #0B3A7A;
+}

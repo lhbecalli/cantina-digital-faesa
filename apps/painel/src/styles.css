@@ -1,0 +1,11 @@
+@import "@cantina/shared/styles.css";
+@source "../../../packages/shared/src";
+@import "./painel.css";
+.pin-gate { min-height: 100dvh; display: grid; place-items: center; padding: var(--s4); }
+.pin-card { width: min(380px, 100%); background: #fff; border: 1px solid var(--blue-900); border-radius: 16px; padding: var(--s6); display: grid; gap: var(--s3); }
+.pin-card p { color: var(--gray); }
+.pin-error { color: var(--red) !important; font-weight: 600; }
+.demo-zone { display: grid; gap: var(--s2); margin-top: var(--s2); }
+.demo-zone > .icon-btn { justify-self: end; color: var(--icon-muted); cursor: pointer; }
+.demo-zone > .icon-btn:hover, .demo-zone > .icon-btn[aria-expanded="true"] { color: var(--blue-900); }
+.demo-panel { display: flex; justify-content: space-between; align-items: center; gap: var(--s3); flex-wrap: wrap; }

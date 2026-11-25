@@ -1,0 +1,17 @@
+node_modules
+**/node_modules
+**/dist
+legacy
+backend/.venv
+backend/data
+.git
+*.log
+**/.env
+**/.env.*
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/*.pem
+**/*.key
+**/.venv
+**/__pycache__

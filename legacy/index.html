@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cantina Digital FAESA — Protótipo</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="shared/css/tokens.css">
+  <link rel="stylesheet" href="shared/css/base.css">
+  <style>
+    body { min-height: 100dvh; display: grid; place-items: center; padding: 24px; background: var(--bg-page); }
+    .box { width: min(720px, 100%); background: #fff; border: 1px solid var(--blue-900); border-radius: 16px; padding: 28px; display: grid; gap: 20px; }
+    h1 { font-size: 26px; } .lead { color: var(--gray); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .go { display: grid; gap: 6px; padding: 16px; border: 1px solid var(--line); border-radius: var(--r-lg); text-decoration: none; color: inherit; transition: border-color 160ms var(--ease-out); }
+    .go:hover { border-color: var(--blue-600); } .go .ic { width: 24px; height: 24px; color: var(--blue-600); margin-bottom: 4px; } .go h2 { font-size: 17px; } .go p { color: var(--gray); font-size: 14px; }
+    .tip { display: flex; gap: 10px; color: var(--gray); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; } .tip .ic { color: var(--blue-600); }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <div id="logo"></div>
+    <div><h1>Cantina Digital FAESA</h1><p class="lead">Protótipo do Projeto Integrador. Dados fictícios para demonstração.</p></div>
+    <div class="cards">
+      <a class="go" href="app/index.html" target="_blank" rel="noopener"><span id="i1"></span><h2>App do aluno</h2><p>Cardápio, carrinho, assistente, ticket com QR e acompanhamento do pedido.</p></a>
+      <a class="go" href="cozinha/index.html" target="_blank" rel="noopener"><span id="i2"></span><h2>Painel da cantina</h2><p>Kanban em tempo real, gestão do cardápio e relatório de vendas.</p></a>
+    </div>
+    <p class="tip"><span id="i3"></span><span>Abra os dois lado a lado, em janelas do mesmo navegador. O que muda em um aparece no outro.</span></p>
+  </main>
+  <script src="shared/js/icons.js"></script>
+  <script src="shared/js/utils.js"></script>
+  <script>
+    document.getElementById('logo').appendChild(FAESA.logo({ height: 34, src: 'assets/logo-faesa.png' }));
+    document.getElementById('i1').appendChild(FAESA.icon('smartphone'));
+    document.getElementById('i2').appendChild(FAESA.icon('store'));
+    document.getElementById('i3').appendChild(FAESA.icon('columns'));
+  </script>
+</body>
+</html>
